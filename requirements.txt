@@ -1,0 +1,10 @@
+pandas
+numpy
+psycopg[binary]
+python-dotenv
+matplotlib
+seaborn
+scikit-learn
+statsmodels
+SQLAlchemy
+jupyter

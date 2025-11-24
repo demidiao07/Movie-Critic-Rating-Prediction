@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS-specific
+.DS_Store
+
+# Environments
+.env
+.venv/
+venv/
+.env.*
+
+# Data (only if you don't want to push big raw files)
+data/*.pkl
+data/*.csv
+
+# VSCode / IDE
+.vscode/
+.idea/
