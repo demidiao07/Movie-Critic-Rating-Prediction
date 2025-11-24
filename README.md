@@ -5,6 +5,29 @@ This project builds a predictive model that estimates a movie’s critic rating 
 The project includes data extraction from PostgreSQL, data cleaning, exploratory data analysis, feature engineering, and linear regression modeling.
 
 
+
+## 0. Project Preview
+Below are examples of the visual outputs.
+
+**1. Number of Movies Released Per Year**
+
+The number of movies released each year gradually increases from the 1970s through the 2000s.
+
+<img src="images/director.png" width="450">
+
+**2. Average Critic vs Audience Ratings by Movie Rating**
+
+Most movies are PG-13 and R before 2010, G-rated movies make up a smaller percentage on the other hand.
+
+<img src="images/movie_rating.png" width="450">
+
+**3. Top 10 Directors by Popular Movies Before 2010**
+
+The well-established directors consistently produce commercially successful and widely-viewed movies.
+
+<img src="images/num_movies.png" width="450">
+
+
 ## 1. Project Structure
 
 Basic layout:
@@ -69,6 +92,7 @@ Each model was evaluated using:
 * **R²**
 * **MAE**
 * **RMSE**
+  
 **Model 3 performed the best**, showing that genre is the strongest predictor of critic ratings.
 
 | Model       | R²         | MAE       | RMSE      |
@@ -79,4 +103,5 @@ Each model was evaluated using:
 | Model 4     | 0.1429     | 21.82     | 26.27     |
 | Model 5     | 0.1176     | 22.43     | 26.65     |
 | Model 6     | 0.0618     | 23.29     | 27.48     |
+
 
