@@ -15,13 +15,13 @@ movie-analysis/
 ├── README.md
 ├── requirements.txt
 ├── .gitignore
-├── .env                # Not included in repo (ignored)
+├── .env               # not included (ignored)
 │
 ├── data/
-│   └── movies_raw.csv
+│ └── movies_raw.csv
 │
 ├── notebooks/
-│   └── project.ipynb   # Full analysis, EDA, feature engineering, modeling
+│ └── project.ipynb    # Full analysis, EDA, feature engineering, modeling
 ```
 
 
@@ -36,34 +36,35 @@ Data was extracted using the Python library **psycopg** through a secure `.env` 
 
 ## 3. Key Steps in the Project
 ### 1. Data Cleaning & EDA
-* Fixed invalid or missing theatrical release years
-* Created visualizations for yearly movie counts
-* Identified popular movies using audience review counts
-* Explored rating distributions
-* Built pair plots and discovered patterns in runtime, genre, and ratings
-
+- Converted release dates, fixed erroneous years (e.g., 20xx → 19xx)
+- Visualized yearly theatrical releases
+- Identified *popular* movies using audience review counts
+- Examined MPAA rating distributions
+- Created pair plots to explore runtime, genre, and rating relationships
+  
 ### 2. Feature Engineering
 Created new predictive features, including:
-* `kid_friendly` (1 for G/PG, else 0)
-* Genre dummy variables
-* `genre_count`
-* `runtime_ratio` (relative to decade average)
-* `decade`
+- `kid_friendly` (1 if rating is G/PG)
+- Genre dummy variables (multi-label exploding)
+- `genre_count` (number of genres per film)
+- `runtime_ratio` (runtime divided by decade average)
+- `decade` and `movie_age` features
+- `runtime_sq` quadratic term
 
 ### 3. Modeling
 Six linear regression models were trained:
-* **Model 1**: runtime_in_minutes
-* **Model 2**: runtime_in_minutes + kid_friendly
-* **Model 3**: runtime_in_minutes + kid_friendly + genre dummies
-* **Model 4**: Model 3 + genre_count
-* **Model 5**: Model 4 + runtime_ratio
-* **Model 6**: Model 5 + runtime_sq
+1. **Model 1:** runtime_in_minutes  
+2. **Model 2:** runtime_in_minutes + kid_friendly  
+3. **Model 3:** runtime + kid_friendly + genre dummies  
+4. **Model 4:** Model 3 + genre_count  
+5. **Model 5:** Model 4 + runtime_ratio  
+6. **Model 6:** Model 5 + runtime_sq  
 
 ### 4. Model Evaluation
 Each model was evaluated using:
-* **R²**
-* **MAE**
-* **RMSE**
+- **R²** (variance explained)
+- **MAE** (mean absolute error)
+- **RMSE** (root mean squared error)
 
 | Model   | R²       | MAE       | RMSE      |
 | ------- | -------- | --------- | --------- |
@@ -76,4 +77,6 @@ Each model was evaluated using:
 
 **Model 3 performed the best**, showing that genre is the strongest predictor of critic ratings.
 
-
+Insights include:
+- **Genre** is the most impactful predictor of critic ratings.
+- Adding `genre_count`, `runtime_ratio`, or quadratic terms produced **minimal marginal improvement**, suggesting linear models may struggle with the limited feature set.
