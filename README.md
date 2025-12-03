@@ -80,3 +80,4 @@ Each model was evaluated using:
 Insights include:
 - **Genre** is the most impactful predictor of critic ratings.
 - Adding `genre_count`, `runtime_ratio`, or quadratic terms produced **minimal marginal improvement**, suggesting linear models may struggle with the limited feature set.
+
