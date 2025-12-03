@@ -5,8 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="457ecb0b-003d-40cf-ac22-d84333553add" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/movies_clean.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/movies_raw.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/director.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/movie_rating.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/num_movies.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/notebooks/project.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/notebooks/project.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/db_connection.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,18 +29,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "demidiao07"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;demidiao07&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/demidiao07/movie-analysis.git",
-    "accountId": "eb5eb164-ff32-49d7-a873-ac49f5118d16"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/demidiao07/movie-analysis.git&quot;,
+    &quot;accountId&quot;: &quot;eb5eb164-ff32-49d7-a873-ac49f5118d16&quot;
   }
-}]]></component>
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 3
 }</component>
@@ -54,6 +60,7 @@
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -81,7 +88,9 @@
       <workItem from="1763931336222" duration="42000" />
       <workItem from="1763931389928" duration="10853000" />
       <workItem from="1763948977716" duration="10108000" />
-      <workItem from="1764008580873" duration="14408000" />
+      <workItem from="1764008580873" duration="14863000" />
+      <workItem from="1764702383519" duration="15944000" />
+      <workItem from="1764733080038" duration="5704000" />
     </task>
     <servers />
   </component>
