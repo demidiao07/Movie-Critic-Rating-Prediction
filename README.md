@@ -1,5 +1,5 @@
 # Movie Critic Rating Prediction
-MSDS – Machine Learning & Data Science Project
+MLDS 422 Project
 
 This project builds a predictive model that estimates a movie’s critic rating using pre-release information such as genre, runtime, and MPAA rating. 
 The project includes data extraction from PostgreSQL, data cleaning, exploratory data analysis, feature engineering, and linear regression modeling.
@@ -10,7 +10,7 @@ The project includes data extraction from PostgreSQL, data cleaning, exploratory
 Basic layout:
 
 ```arduino
-movie-analysis/
+Movie Critic Rating Prediction/
 │
 ├── README.md
 ├── requirements.txt
@@ -80,4 +80,5 @@ Each model was evaluated using:
 Insights include:
 - **Genre** is the most impactful predictor of critic ratings.
 - Adding `genre_count`, `runtime_ratio`, or quadratic terms produced **minimal marginal improvement**, suggesting linear models may struggle with the limited feature set.
+
 
